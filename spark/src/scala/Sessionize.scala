@@ -85,7 +85,7 @@ object Sessionize {
     val reducedSessionRDD = sessionPairRDD.reduceByKey(_ ++ _)
 
     //we can save it for future analysis
-    reducedSessionRDD.saveAsTextFile(args(2))
+    reducedSessionRDD.saveAsTextFile(args(1))
 
     /**
       * Determine the average session time
